@@ -1,0 +1,209 @@
+'use client';
+
+export default function Pricing() {
+  const plans = [
+    {
+      name: "Basic",
+      price: "$29",
+      period: "/month",
+      description: "Essential AI legal tools for everyday needs",
+      features: [
+        "Unlimited AI legal consultations",
+        "Basic document generation",
+        "Legal issue triage",
+        "6 practice area coverage",
+        "Email support",
+        "Legal knowledge base access",
+      ],
+      notIncluded: [
+        "Attorney consultations",
+        "Document review by attorney",
+        "Court representation",
+      ],
+      buttonText: "Start Basic",
+      popular: false,
+      color: "from-gray-600 to-gray-800",
+      borderColor: "border-gray-200",
+    },
+    {
+      name: "Professional",
+      price: "$99",
+      period: "/month",
+      description: "AI assistance plus limited attorney access",
+      features: [
+        "Everything in Basic, plus:",
+        "2 attorney consultations/month (30 min each)",
+        "Attorney document review (up to 5 pages)",
+        "Advanced AI document generation",
+        "Priority email & chat support",
+        "Discount on additional attorney hours",
+      ],
+      notIncluded: [
+        "Unlimited attorney consultations",
+        "Court representation",
+      ],
+      buttonText: "Get Professional",
+      popular: true,
+      color: "from-blue-600 to-blue-800",
+      borderColor: "border-blue-300",
+    },
+    {
+      name: "Premium",
+      price: "$299",
+      period: "/month",
+      description: "Full AI + attorney protection for peace of mind",
+      features: [
+        "Everything in Professional, plus:",
+        "Unlimited attorney consultations",
+        "Unlimited document review",
+        "Dedicated case manager",
+        "Court representation (up to 2 cases/year)",
+        "24/7 phone support",
+        "Family member coverage (up to 4)",
+      ],
+      notIncluded: [],
+      buttonText: "Go Premium",
+      popular: false,
+      color: "from-amber-600 to-amber-800",
+      borderColor: "border-amber-300",
+    },
+  ];
+
+  return (
+    <section id="membership" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+            Choose Your Protection Level
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            From AI-only assistance to comprehensive attorney coverage — find the plan that fits your needs
+          </p>
+        </div>
+
+        {/* Pricing Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className={`relative bg-white rounded-2xl shadow-xl ${
+                plan.popular ? 'border-4 ' + plan.borderColor + ' transform scale-105' : 'border-2 ' + plan.borderColor
+              } overflow-hidden hover:shadow-2xl transition-all duration-300`}
+            >
+              {/* Popular Badge */}
+              {plan.popular && (
+                <div className="absolute top-0 right-0">
+                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-bl-xl font-bold text-sm shadow-lg">
+                    ⭐ MOST POPULAR
+                  </div>
+                </div>
+              )}
+
+              <div className="p-8">
+                {/* Header */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                  <p className="text-gray-600 text-sm mb-6">{plan.description}</p>
+                  <div className="flex items-baseline">
+                    <span className={`text-5xl font-extrabold bg-gradient-to-r ${plan.color} bg-clip-text text-transparent`}>
+                      {plan.price}
+                    </span>
+                    <span className="text-gray-600 ml-2">{plan.period}</span>
+                  </div>
+                </div>
+
+                {/* Features */}
+                <div className="mb-8">
+                  <ul className="space-y-4">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <svg className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                        </svg>
+                        <span className={`text-gray-700 ${feature.includes('Everything') ? 'font-semibold' : ''}`}>
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                    {plan.notIncluded.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3 opacity-50">
+                        <svg className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"/>
+                        </svg>
+                        <span className="text-gray-400 line-through">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTA Button */}
+                <button
+                  className={`w-full py-4 px-6 rounded-xl font-bold text-white bg-gradient-to-r ${plan.color} hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg ${
+                    plan.popular ? 'ring-4 ring-blue-200' : ''
+                  }`}
+                >
+                  {plan.buttonText}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Money-Back Guarantee */}
+        <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white shadow-2xl">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="text-5xl mb-4">✓</div>
+            <h3 className="text-3xl font-bold mb-4">30-Day Money-Back Guarantee</h3>
+            <p className="text-xl text-green-100 mb-6">
+              Try GPULaw risk-free. If you're not completely satisfied within the first 30 days,
+              we'll refund your membership — no questions asked.
+            </p>
+            <div className="flex items-center justify-center gap-8 text-sm">
+              <div className="flex items-center gap-2">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+                <span>No Contracts</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+                <span>Cancel Anytime</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+                <span>Full Refund</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">Frequently Asked Questions</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Can I upgrade or downgrade my plan?</h4>
+              <p className="text-gray-600">Yes! You can change your membership level at any time. Upgrades take effect immediately, and downgrades apply at your next billing cycle.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Are attorneys licensed in my state?</h4>
+              <p className="text-gray-600">Yes, we connect you with attorneys licensed in your jurisdiction who are experienced in the relevant practice area.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
+              <h4 className="text-lg font-bold text-gray-900 mb-3">What if I need more attorney time?</h4>
+              <p className="text-gray-600">Members receive discounted hourly rates for additional attorney consultations beyond their plan limits.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Is my information confidential?</h4>
+              <p className="text-gray-600">Absolutely. All communications are protected by attorney-client privilege and our strict privacy policies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
