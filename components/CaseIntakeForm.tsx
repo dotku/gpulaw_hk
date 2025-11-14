@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface AnalysisResult {
   analysis: string;
@@ -204,8 +206,10 @@ export default function CaseIntakeForm() {
                     </div>
                     <h4 className="text-xl font-bold text-gray-900">AI Legal Analysis</h4>
                   </div>
-                  <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap">
-                    {analysisResult.analysis}
+                  <div className="prose prose-sm max-w-none text-gray-700">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {analysisResult.analysis}
+                    </ReactMarkdown>
                   </div>
                 </div>
 
