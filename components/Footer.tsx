@@ -9,8 +9,8 @@ export default function Footer() {
               GPULaw
             </h3>
             <p className="text-gray-400 mb-4 text-sm">
-              由持证律师支持的AI驱动法律保护。
-              让每个人都能获得便捷且平价的法律服务。
+              由持牌律師支持嘅 AI 驅動法律保護。
+              讓每個人都能獲得便捷且平價嘅法律服務。
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
@@ -22,7 +22,7 @@ export default function Footer() {
 
           {/* Practice Areas */}
           <div>
-            <h4 className="text-lg font-bold mb-4">业务领域</h4>
+            <h4 className="text-lg font-bold mb-4">業務領域</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
@@ -31,27 +31,27 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
-                  劳动纠纷
+                  僱傭糾紛
                 </a>
               </li>
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
-                  房产纠纷
+                  物業糾紛
                 </a>
               </li>
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
-                  合同纠纷
+                  合約糾紛
                 </a>
               </li>
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
-                  交通事故
+                  交通意外
                 </a>
               </li>
               <li>
                 <a href="#practice-areas" className="text-gray-400 hover:text-white transition-colors">
-                  知识产权
+                  知識產權
                 </a>
               </li>
             </ul>
@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-lg font-bold mb-4">资源</h4>
+            <h4 className="text-lg font-bold mb-4">資源</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">
@@ -68,27 +68,27 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#membership" className="text-gray-400 hover:text-white transition-colors">
-                  价格
+                  價格
                 </a>
               </li>
               <li>
                 <a href="#get-help" className="text-gray-400 hover:text-white transition-colors">
-                  立即获取帮助
+                  立即獲取幫助
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  法律知识库
+                  法律知識庫
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  AI法律助手
+                  AI 法律助手
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  律师网络
+                  律師網絡
                 </a>
               </li>
             </ul>
@@ -96,7 +96,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-bold mb-4">联系我们</h4>
+            <h4 className="text-lg font-bold mb-4">聯絡我哋</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -111,8 +111,8 @@ export default function Footer() {
                 <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                 </svg>
-                <a href="tel:1-800-GPU-LAWS" className="text-gray-400 hover:text-white transition-colors">
-                  1-800-GPU-LAWS
+                <a href="tel:+852-XXXX-XXXX" className="text-gray-400 hover:text-white transition-colors">
+                  +852 XXXX XXXX
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -120,8 +120,8 @@ export default function Footer() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                 </svg>
                 <span className="text-gray-400">
-                  24/7 AI支持<br/>
-                  <span className="text-xs">周一至周五 9am-6pm 律师支持</span>
+                  24/7 AI 支援<br/>
+                  <span className="text-xs">星期一至五 上午9時至下午6時 律師支援</span>
                 </span>
               </li>
             </ul>
@@ -154,17 +154,17 @@ export default function Footer() {
               <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"/>
               </svg>
-              <span className="min-w-0">重要法律免责声明</span>
+              <span className="min-w-0">重要法律免責聲明</span>
             </h4>
             <p className="text-xs text-gray-400 leading-relaxed">
-              <strong className="text-white">GPULaw是法律信息服务平台，不是律师事务所</strong>，平台本身不提供法律服务或法律建议。
-              本平台提供的AI驱动工具和信息仅供一般法律知识参考，不应被解释为专业法律意见或建议。
-              使用GPULaw平台不会建立律师-委托人关系，除非您通过我们的平台与具有中华人民共和国执业资格的律师建立正式委托关系。
-              平台合作的执业律师是独立执业者，对其提供的法律服务独立承担责任。
-              法律结果因案件具体情况而异，过往案例不代表未来结果。
-              GPULaw会员服务提供法律信息工具和律师咨询渠道，但不保证任何特定的法律结果。
-              如您有具体法律问题，请务必咨询具有执业资格的专业律师，以获得针对您具体情况的法律建议。
-              本平台服务遵守中华人民共和国相关法律法规。
+              <strong className="text-white">GPULaw 係法律資訊服務平台，唔係律師行</strong>，平台本身唔提供法律服務或法律意見。
+              本平台提供嘅 AI 驅動工具同資訊僅供一般法律知識參考，唔應被解釋為專業法律意見或建議。
+              使用 GPULaw 平台唔會建立律師-客戶關係，除非您透過我哋嘅平台與具有香港執業資格嘅律師建立正式委託關係。
+              平台合作嘅執業律師係獨立執業者，對其提供嘅法律服務獨立承擔責任。
+              法律結果因案件具體情況而異，過往案例唔代表未來結果。
+              GPULaw 會員服務提供法律資訊工具同律師諮詢渠道，但唔保證任何特定嘅法律結果。
+              如您有具體法律問題，請務必諮詢具有執業資格嘅專業律師，以獲得針對您具體情況嘅法律意見。
+              本平台服務遵守香港特別行政區相關法律法規及《基本法》。
             </p>
           </div>
         </div>
@@ -177,19 +177,19 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                隐私政策
+                私隱政策
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                服务条款
+                服務條款
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                律师网络条款
+                律師網絡條款
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                无障碍访问
+                無障礙訪問
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Cookie政策
+                Cookie 政策
               </a>
             </div>
           </div>
@@ -197,10 +197,10 @@ export default function Footer() {
           {/* Additional Compliance Info */}
           <div className="mt-4 sm:mt-6 text-center px-2">
             <p className="text-xs text-gray-500">
-              GPULaw平台由GPULaw Technologies, Inc.运营 | 执业律师对其法律服务独立承担责任
+              GPULaw 平台由 GPULaw Technologies, Inc. 運營 | 執業律師對其法律服務獨立承擔責任
               <br className="hidden sm:inline"/>
               <span className="sm:hidden"> </span>
-              AI技术由先进语言模型驱动 | 合作律师网络包括具有中华人民共和国执业资格的专业律师 | 服务遵守相关法律法规
+              AI 技術由先進語言模型驅動 | 合作律師網絡包括具有香港執業資格嘅專業律師 | 服務遵守相關法律法規
             </p>
           </div>
         </div>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GPULaw - AI驱动的法律援助 | 律师网络",
-  description: "GPULaw结合先进的AI法律援助与执业律师。在家庭法、消费者债务、住房、移民等领域获得即时法律指导。提供24/7 AI支持和律师咨询服务。",
-  keywords: ["法律AI", "律师咨询", "法律援助", "AI律师", "法律帮助", "家庭法", "移民律师", "消费者债务", "GPULaw"],
+  title: "GPULaw - AI 驅動嘅法律協助 | 律師網絡",
+  description: "GPULaw 結合先進嘅 AI 法律協助與執業律師。喺婚姻家庭、僱傭糾紛、物業糾紛、合約糾紛、交通意外同知識產權等領域獲得即時法律指導。提供 24/7 AI 支援同律師諮詢服務。",
+  keywords: ["法律AI", "律師諮詢", "法律協助", "AI律師", "法律幫助", "婚姻家庭", "僱傭糾紛", "物業糾紛", "香港法律", "GPULaw"],
   authors: [{ name: "GPULaw Technologies, Inc." }],
   creator: "GPULaw Technologies, Inc.",
   publisher: "GPULaw Technologies, Inc.",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "GPULaw - AI驱动的法律援助",
-    description: "将AI工具与经验丰富的律师相结合的平价法律会员服务",
+    title: "GPULaw - AI 驅動嘅法律協助",
+    description: "將 AI 工具與經驗豐富嘅律師相結合嘅平價法律會員服務",
     url: '/',
     siteName: "GPULaw",
     type: "website",
-    locale: "zh_CN",
+    locale: "zh_HK",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GPULaw - AI驱动的法律援助",
-    description: "通过AI + 律师服务获得即时法律指导",
+    title: "GPULaw - AI 驅動嘅法律協助",
+    description: "透過 AI + 律師服務獲得即時法律指導",
     creator: "@gpulaw",
   },
   robots: {
@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh">
+    <html lang="zh-HK">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
